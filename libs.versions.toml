@@ -1,0 +1,13 @@
+[versions]
+kotlin = "2.3.20"
+fabric-loom = "1.11.8"
+
+#farrow = "1.0.0+arrow.1.2.3"
+
+[libraries]
+#farrow = { module = "net.wiredtomato:farrow", version.ref = "farrow" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+fabric-loom = { id = "fabric-loom", version.ref = "fabric-loom" }

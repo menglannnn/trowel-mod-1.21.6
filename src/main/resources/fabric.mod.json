@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "trowel",
+  "version": "${version}",
+  "name": "Trowel",
+  "description": "A fabric port of Quarks Trowel item.",
+  "authors": [
+    "TheEnderCore",
+    "Astra"
+  ],
+  "contact": {
+    "homepage": "https://github.com/theendercore/Trowel",
+    "issues": "https://github.com/theendercore/Trowel/issues",
+    "sources": "https://github.com/theendercore/Trowel",
+    "discord": "https://discord.gg/KZ5Q364hEg"
+  },
+  "license": "MIT",
+  "icon": "assets/trowel/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.theendercore.trowel.Trowel"
+      }
+    ],
+    "fabric-datagen": [
+      {
+        "adapter": "kotlin",
+        "value": "com.theendercore.trowel.data.gen.TrowelData"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.6",
+    "java": ">=21",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=1.13.10+kotlin.2.3.20"
+  }
+}
